@@ -5,21 +5,21 @@
 class Gq < Formula
   desc "jq like cli written in go"
   homepage ""
-  version "1.4.0"
+  version "1.5.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/jmpargana/gq/releases/download/v1.4.0/gq_Darwin_x86_64.tar.gz"
-      sha256 "7ecb0821e4e37cde1a88540ebf61be78f889824b390470b25046ceb1a07fbc1c"
+      url "https://github.com/jmpargana/gq/releases/download/v1.5.0/gq_Darwin_x86_64.tar.gz"
+      sha256 "3cc80906d674c94e99e6a3fc872d3bf1ca8ed28c74e84d3567b1ac43c7565bbc"
 
       def install
         bin.install Dir["*/gq"]
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/jmpargana/gq/releases/download/v1.4.0/gq_Darwin_arm64.tar.gz"
-      sha256 "0eb88200b12a48879ac89b9f790fc9ed14ed48cefc652c175bb7c6fb3ab5568c"
+      url "https://github.com/jmpargana/gq/releases/download/v1.5.0/gq_Darwin_arm64.tar.gz"
+      sha256 "19f93d6c5b9de930f5989733a6f1f4919bc984fafe23faf972ba8ff2ae75bb1a"
 
       def install
         bin.install Dir["*/gq"]
@@ -29,15 +29,15 @@ class Gq < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jmpargana/gq/releases/download/v1.4.0/gq_Linux_x86_64.tar.gz"
-      sha256 "8460858d0a753b577fbfbcd537543fdef2e4314dbebc32fa3c682da4a80d71d0"
+      url "https://github.com/jmpargana/gq/releases/download/v1.5.0/gq_Linux_x86_64.tar.gz"
+      sha256 "db55bff5b78abd7008acf603ae118069b5dfa6569960fb4db7380335607effd6"
       def install
         bin.install Dir["*/gq"]
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jmpargana/gq/releases/download/v1.4.0/gq_Linux_arm64.tar.gz"
-      sha256 "b563d09cf24a9153d02d79c04f1ae83da63a2ec50fc4007dcb053ac1d2e83148"
+      url "https://github.com/jmpargana/gq/releases/download/v1.5.0/gq_Linux_arm64.tar.gz"
+      sha256 "c8af7f1be04e929e6a79b7d2bcd2f8fbca7c602a549bdbf254a10522932778a0"
       def install
         bin.install Dir["*/gq"]
       end
