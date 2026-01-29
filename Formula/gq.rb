@@ -5,13 +5,13 @@
 class Gq < Formula
   desc "jq like cli written in go"
   homepage ""
-  version "1.6.6"
+  version "1.7.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/jmpargana/gq/releases/download/v1.6.6/gq_Darwin_x86_64.tar.gz"
-      sha256 "9ac29ced4f38c39c17bfa23e4c93613974a989f9e82125c99d960a1d2884c5a1"
+      url "https://github.com/jmpargana/gq/releases/download/v1.7.0/gq_Darwin_x86_64.tar.gz"
+      sha256 "e23c007b9526cc1035ed3d3b429087231fb4795138caee3761e3ddd12795c530"
 
       def install
         bin.install Dir["*/gq"]
@@ -19,8 +19,8 @@ class Gq < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/jmpargana/gq/releases/download/v1.6.6/gq_Darwin_arm64.tar.gz"
-      sha256 "14a693ef1b5a7d17fe8a0c9db910984e644b8232c270595c77f0901db7288e9f"
+      url "https://github.com/jmpargana/gq/releases/download/v1.7.0/gq_Darwin_arm64.tar.gz"
+      sha256 "d8b8bfae0a63ad54072742bbcad43db629fd06590ae82610d630b27c4d782cf4"
 
       def install
         bin.install Dir["*/gq"]
@@ -31,16 +31,16 @@ class Gq < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jmpargana/gq/releases/download/v1.6.6/gq_Linux_x86_64.tar.gz"
-      sha256 "36233b58fd916b1fb69935f2bf573908c660ace65aad5155fee3327e2dcacf32"
+      url "https://github.com/jmpargana/gq/releases/download/v1.7.0/gq_Linux_x86_64.tar.gz"
+      sha256 "9baeaf26e141939ccf5f312c027ae9649c10ee832428aad9d31ba21fab3b35cf"
       def install
         bin.install Dir["*/gq"]
         man1.install "gq.1"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jmpargana/gq/releases/download/v1.6.6/gq_Linux_arm64.tar.gz"
-      sha256 "3e629a04466bb4b48090e5dab378454c2963e24753427445c7195f67227d9984"
+      url "https://github.com/jmpargana/gq/releases/download/v1.7.0/gq_Linux_arm64.tar.gz"
+      sha256 "5a4c52b6f3aa10707cafa90ea91f92a913fc27257910e89ca8f9f91c5033064d"
       def install
         bin.install Dir["*/gq"]
         man1.install "gq.1"
